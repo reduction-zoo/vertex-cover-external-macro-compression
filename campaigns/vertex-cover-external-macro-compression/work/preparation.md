@@ -1,8 +1,11 @@
 # Prepare, 2026-09-25
 
 The fixed corpus has 120 distinct source instances: 12 hand-designed edge
-cases and 108 cases from `random.Random(seed)` with recorded seeds 0–107.
-Sizes span 0–8 vertices. Enumeration fixes the expected answers before a
+cases and 108 cases from `random.Random(seed)` with recorded seeds in 0–114
+(seven duplicate source encodings were skipped). Counts by `(kind, n)` are:
+edge: `0:1, 1:2, 2:2, 3:4, 4:3`; random:
+`3:15, 4:22, 5:17, 6:21, 7:20, 8:13`. Sizes span 0–8 vertices.
+Enumeration fixes the expected answers before a
 candidate; 70 admit a cover and 50 do not. The source oracle separately uses
 Z3 5.1.0.0: one Boolean per vertex, one disjunction per edge and a
 pseudo-Boolean cardinality bound. A satisfying assignment is checked against
