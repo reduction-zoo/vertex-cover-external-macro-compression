@@ -1,5 +1,7 @@
 # Vertex Cover → External macro data compression
 
+**Status:** `stopped_without_discovery` · **Research model:** `gpt-6-sol` (confirmed from the research session's turn context) · **Research ended:** 2026-09-25
+
 Independent research campaign. Stopped without a reduction after seven
 attempts (13 of 20 rounds remain). Three gadget families have checked
 false-YES counterexamples under arbitrary dictionary pointers; no

@@ -2,6 +2,7 @@
 
 Budget: 20 rounds. Used: 7. Remaining: 13.
 Board source: 6c7d3bd9c0a8f595279969a9c0a4d1853a3f5c17.
+Research model: `gpt-6-sol`, confirmed from this campaign session's `turn_context`.
 
 Capability probe, 2026-09-25: Python 3.12.14 at
 `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at
