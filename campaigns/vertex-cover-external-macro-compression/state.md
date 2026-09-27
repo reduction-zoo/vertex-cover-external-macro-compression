@@ -1,6 +1,5 @@
 # Campaign state
 
-Budget: 20 rounds. Used: 7. Remaining: 13.
 Board source: 6c7d3bd9c0a8f595279969a9c0a4d1853a3f5c17.
 Research model: `gpt-6-sol`, confirmed from this campaign session's `turn_context`.
 
@@ -17,7 +16,7 @@ No F/G rule or general converse proof is claimed. Correctness: none for a
 reduction; the Prepare corpus and three negative gadget witnesses pass
 their stated checks. Novelty: no construction claimed. Significance:
 one reusable warning about arbitrary dictionary intervals, not a hardness
-result. Prospects within the remaining budget: low (uncalibrated), based
+result. Prospects for this approach: low (uncalibrated), based
 on three failed mechanisms, inaccessible deferred proof, and incompatible
 adjacent normal forms. No independent review or paper is warranted without
 a complete candidate.
