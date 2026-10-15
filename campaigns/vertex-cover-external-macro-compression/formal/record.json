@@ -1,0 +1,7 @@
+{
+  "id": "Q055",
+  "source_definition": "Given a finite simple graph and k, return a vertex cover of size at most k, or NO-SOLUTION. All finite combinatorial structures are explicit and numerical data use binary encoding.",
+  "target_definition": "Given a finite string s, pointer cost h and budget B, return a dictionary D and compressed string C composed of literals and pointers to substrings of D. Recursive replacement must terminate and expand C to s. Count every literal as one unit and every pointer occurrence as h units across both D and C; require total cost at most B. Encode pointer destinations and substring endpoints explicitly.",
+  "required_result": "Construct deterministic polynomial-time maps F and G. F must produce a legal target instance, and G(x,y) must return a valid source output for every valid target output y, including NO-SOLUTION. A complete rule may reconstruct a published construction or give a new one; it must specify every gadget, numerical parameter and decoding step.",
+  "equation": ""
+}

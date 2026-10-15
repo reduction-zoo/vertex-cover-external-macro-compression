@@ -1,0 +1,3 @@
+import Challenge
+#print axioms VertexCoverExternalMacroCompression.Goal
+#print axioms VertexCoverExternalMacroCompression.solve

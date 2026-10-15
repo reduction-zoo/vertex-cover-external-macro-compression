@@ -1,0 +1,68 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "vertex-cover-external-macro-compression: open question",
+    "description": "Construct deterministic polynomial-time maps F and G. F must produce a legal target instance, and G(x,y) must return a valid source output for every valid target output y, including NO-SOLUTION. A complete rule may reconstruct a published construction or give a new one; it must specify every gadget, numerical parameter and decoding step.",
+    "authors": [
+      "Xiwei Pan",
+      "GPT-6"
+    ],
+    "responsible_maintainers": [
+      "Xiwei Pan"
+    ],
+    "license": "Apache-2.0"
+  },
+  "sources": [
+    {
+      "title": "Q055 board definition",
+      "id": "record.json",
+      "type": "problem statement",
+      "relationship": "formalizes"
+    }
+  ],
+  "status": {
+    "scope": "Statement only; no reduction or proof supplied. Counts exclude Challenge.lean and count its unfilled Solution.lean copy.",
+    "sorry_count": 1,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice",
+      "sorryAx"
+    ]
+  },
+  "fidelity": {
+    "divergences": "Pointers use zero-based half-open token intervals in the encoded dictionary, following the classical EPM model described in Section 2.4 of https://link.springer.com/article/10.1007/s00224-020-10013-w . Overlaps and recursive pointers are allowed. An existential finite expansion depth expresses termination from the compressed code; unused dictionary cycles are not rejected, because only replacement of C must terminate in the board definition. Every pointer endpoint, including unused ones, must be in range. Literals are finite alphabet symbols represented by natural-number labels; their objective cost remains one even though their encoding takes binary bits. Both dictionary and code storage are charged. Empty words and empty substrings are admitted. SEMANTIC REVIEW: confirm the endpoint and empty-substring convention. The prepared validator additionally expands all dictionary tokens, and therefore rejects unused cycles accepted here; that extra restriction is not imposed by the board or the cited C-expansion semantics."
+  },
+  "review": {
+    "status": "self-assessed; proof absent",
+    "reviewers": [],
+    "notes": "Local build and axiom audit are recorded in evidence/statement. Comparator execution exits at the missing Linux bubblewrap prerequisite; no statement-agreement or Linux CI pass is claimed."
+  },
+  "alignment": {
+    "namespace": "VertexCoverExternalMacroCompression",
+    "statements": [
+      {
+        "source": "record.json",
+        "lean": "VertexCoverExternalMacroCompression.solve",
+        "module": "Challenge",
+        "status": "open; statement only"
+      }
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "GPT-6"
+        ],
+        "framework": "Codex",
+        "tool_setup": "Lean 4.35.0, pinned Mathlib, native semantic examples, local axiom audit; Linux comparator configured but unavailable on macOS",
+        "prompting_notes": "State the fixed board question without proving it; preserve the Q001 reduction contract and flag unresolved modelling choices."
+      }
+    ],
+    "notes": "No mathematical solution or independent review is claimed."
+  },
+  "acknowledgements": "Lean, Mathlib, and the Q001 comparator project at 6e5d9d7aa425db5f01ee44f4c4e1710cf2993fda."
+}
